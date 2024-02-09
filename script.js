@@ -41,11 +41,11 @@ rollBtn.addEventListener('click', function () {
     totalScore();
 
     if (totalScore1.innerHTML >= 20) {
-        results.innerHTML = `turn 1 won`;
+        results.innerHTML = `Player 1 won`;
         rollBtn.style.visibility = 'hidden';
     }
     else if (totalScore2.innerHTML >= 20) {
-        results.innerHTML = `turn 2 won`;
+        results.innerHTML = `Player 2 won`;
         rollBtn.style.visibility = 'hidden';
     }
 
