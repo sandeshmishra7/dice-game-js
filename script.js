@@ -5,9 +5,6 @@ let currentScore2 = document.querySelector('.currentScorep2');
 let totalScore2 = document.querySelector('.totalScorep2');
 let results = document.querySelector('.results');
 
-var cscore1 = 0;
-var cscore2 = 0;
-
 var tscore1 = 0;
 var tscore2 = 0;
 
@@ -16,19 +13,13 @@ function rollDice() {
 }
 
 function totalScore() {
-    var rollresult1 = rollDice();
-    var rollresult2 = rollDice();
+    currentScore1.innerHTML = rollDice();
+    currentScore2.innerHTML = rollDice();
 
-    cscore1 = rollresult1;
-    currentScore1.innerHTML = cscore1;
-
-    cscore2 = rollresult2;
-    currentScore2.innerHTML = cscore2;
-
-    tscore1 += cscore1
+    tscore1 += Number(currentScore1.innerHTML)
     totalScore1.innerHTML = tscore1;
 
-    tscore2 += cscore2
+    tscore2 += Number(currentScore2.innerHTML)
     totalScore2.innerHTML = tscore2;
 }
 
