@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.player-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    list-style-type: none;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    color: #fff;
+}
+
+.results {
+    font-size: 25px;
+    color: #008000;
+}
